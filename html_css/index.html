@@ -1,36 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site Başlığı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <style>
-    p{
-        color: blue; 
+      a {
+        text-decoration: none;
+        display: block;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: tomato;
+      }
+      a:visited {
+        color: black;
+      }
+      p {
+        color: blue;
         height: 400px;
-        background-image:url("assets/gorsel.jpeg");
+        background-image: url("assets/gorsel.jpeg");
         background-repeat: no-repeat;
-        
-    }
-    h1{
-        color:red;
+        font-family: "Roboto", sans-serif;
+      }
+      h1 {
+        color: red;
         font-size: 12px;
-    }
-    h2{
+      }
+      h2 {
         border: 5px solid blue;
         border-radius: 14px;
         margin-top: 10px;
         padding: 5px;
         outline: 5px solid yellow;
-    }
+        text-align: center;
+      }
+      ul {
+        background-color: aqua;
+      }
+      button {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        margin: 0;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: tomato;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Merhaba Dünya</h1>
     <h2>Alt Başlık</h2>
-    <p> İlk HTML Denemem.</p>
-    <a href="about.html">Hakkımda</a>
-    <a href="https://github.com" target="_blank">Link</a> 
-</body>
+    <p>İlk HTML Denemem.</p>
+    <a href="about.html">Hakkımda </a>
+    <a href="https://github.com" target="_blank">Link</a>
+    <ul>
+      <!--Sıralı olmayan liste-->
+      <li>Birinci</li>
+      <li>ikinci</li>
+      <li>Üçüncü</li>
+      <li>Dördüncü</li>
+      <li>Beşinci</li>
+    </ul>
+
+    <ol>
+      <!--Sıralı liste-->
+      <li>Birinci</li>
+      <li>ikinci</li>
+      <li>Üçüncü</li>
+      <li>Dördüncü</li>
+      <li>Beşinci</li>
+    </ol>
+    <button>Y</button>
+  </body>
 </html>
